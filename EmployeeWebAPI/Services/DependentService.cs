@@ -5,7 +5,7 @@ namespace EmployeeWebAPI.Services;
 
 public class DependentService
 {
-    public EMDatabase Database { get; set; }
+    public EMDatabase Database { get; }
 
 	public DependentService(EMDatabase database)
 	{
