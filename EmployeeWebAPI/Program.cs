@@ -7,6 +7,8 @@ builder.Services.AddSingleton<EMDatabase>();
 builder.Services.AddSingleton<EmployeeService>();
 builder.Services.AddSingleton<DependentService>();
 builder.Services.AddSingleton<DepartmentService>();
+builder.Services.AddSingleton<JobService>();
+builder.Services.AddSingleton<LocationService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

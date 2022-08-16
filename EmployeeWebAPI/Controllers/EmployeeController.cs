@@ -9,7 +9,7 @@ namespace EmployeeWebAPI.Controllers;
 public class EmployeeController : ControllerBase
 {
 	public EmployeeService EmployeeService { get; }
-	public DependentService DependentService { get; set; }
+	public DependentService DependentService { get; }
 
 	public EmployeeController(EmployeeService employeeService, DependentService dependentService)
 	{
