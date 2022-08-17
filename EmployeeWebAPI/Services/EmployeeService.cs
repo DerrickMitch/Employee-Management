@@ -5,31 +5,31 @@ namespace EmployeeWebAPI.Services;
 
 public class EmployeeService
 {
-	public EMDatabase Database { get; }
+	private readonly HRContext ctx;
 
 	public DependentService DependentService { get; set; }
 
-	public EmployeeService(EMDatabase db, DependentService dependentService)
+	public EmployeeService(HRContext context, DependentService dependentService)
 	{
-		Database = db;
+		ctx = context;
 		DependentService = dependentService;
 	}
 
 	public IEnumerable<Employee> GetAllEmployees()
 	{
-        return Database.Employees;
+        return ctx.Employees;
     }
 
 	public IEnumerable<Employee> GetAllEmployeesByDepartment(int departmentID)
 	{
-		return Database.Employees
+		return ctx.Employees
 			.Include(e => e.Department)
 			.Where(e => e.DepartmentID == departmentID);
 	}
 
 	public Employee GetEmployee(int id)
 	{
-		return Database.Employees
+		return ctx.Employees
 			.Include(e => e.Department)
 			.Include(e => e.Manager)
 			.Include(e => e.Job)

@@ -3,7 +3,7 @@ using EmployeeWebAPI.Models;
 
 namespace EmployeeWebAPI.Services;
 
-public class EMDatabaseService : DbContext
+public class HRContext : DbContext
 {
     // Properties
     public DbSet<Employee> Employees { get; set; }

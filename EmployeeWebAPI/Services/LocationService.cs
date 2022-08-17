@@ -5,12 +5,12 @@ namespace EmployeeWebAPI.Services;
 
 public class LocationService
 {
-    public EMDatabase Database { get; }
+	private readonly HRContext ctx;
 
-	public LocationService(EMDatabase database)
+	public LocationService(HRContext context)
 	{
-		Database = database;
+		ctx = context;
 	}
 
-	public IEnumerable<Location> GetLocations() => Database.Locations.Include(j => j.Country);
+	public IEnumerable<Location> GetLocations() => ctx.Locations.Include(j => j.Country);
 }

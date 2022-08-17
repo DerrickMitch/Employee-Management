@@ -5,12 +5,12 @@ namespace EmployeeWebAPI.Services;
 
 public class DependentService
 {
-    public EMDatabase Database { get; }
+	private readonly HRContext ctx;
 
-	public DependentService(EMDatabase database)
+	public DependentService(HRContext context)
 	{
-		Database = database;
+		ctx = context;
 	}
 
-	public IEnumerable<Dependent> GetEmployeeDependents(int id) => Database.Dependents.Where(d => d.EmployeeID == id);
+	public IEnumerable<Dependent> GetEmployeeDependents(int id) => ctx.Dependents.Where(d => d.EmployeeID == id);
 }

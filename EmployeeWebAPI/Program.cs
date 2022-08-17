@@ -3,7 +3,7 @@ using EmployeeWebAPI.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddSingleton<EMDatabase>();
+builder.Services.AddSingleton<HRContext>();
 builder.Services.AddSingleton<EmployeeService>();
 builder.Services.AddSingleton<DependentService>();
 builder.Services.AddSingleton<DepartmentService>();

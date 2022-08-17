@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\EmployeeManagement\\EmployeeWebAPI\\EmployeeWebAPI.csproj": {}
+    "C:\\Projects\\Employee-Management\\EmployeeWebAPI\\EmployeeWebAPI.csproj": {}
   },
   "projects": {
-    "E:\\EmployeeManagement\\EmployeeWebAPI\\EmployeeWebAPI.csproj": {
+    "C:\\Projects\\Employee-Management\\EmployeeWebAPI\\EmployeeWebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\EmployeeManagement\\EmployeeWebAPI\\EmployeeWebAPI.csproj",
+        "projectUniqueName": "C:\\Projects\\Employee-Management\\EmployeeWebAPI\\EmployeeWebAPI.csproj",
         "projectName": "EmployeeWebAPI",
-        "projectPath": "E:\\EmployeeManagement\\EmployeeWebAPI\\EmployeeWebAPI.csproj",
+        "projectPath": "C:\\Projects\\Employee-Management\\EmployeeWebAPI\\EmployeeWebAPI.csproj",
         "packagesPath": "C:\\Users\\derri\\.nuget\\packages\\",
-        "outputPath": "E:\\EmployeeManagement\\EmployeeWebAPI\\obj\\",
+        "outputPath": "C:\\Projects\\Employee-Management\\EmployeeWebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\derri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -55,8 +55,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -68,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

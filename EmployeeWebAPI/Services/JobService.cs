@@ -5,14 +5,14 @@ namespace EmployeeWebAPI.Services;
 
 public class JobService
 {
-    public EMDatabase Database { get; }
+	private readonly HRContext ctx;
 
-	public JobService(EMDatabase database)
+	public JobService(HRContext context)
 	{
-		Database = database;
+		ctx = context;
 	}
 
-	public IEnumerable<Job> GetJobs() => Database.Jobs;
+	public IEnumerable<Job> GetJobs() => ctx.Jobs;
 
-	public Job GetJob(int id) => Database.Jobs.First(j => j.ID == id);
+	public Job GetJob(int id) => ctx.Jobs.First(j => j.ID == id);
 }

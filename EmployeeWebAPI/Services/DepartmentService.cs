@@ -8,22 +8,22 @@ public class DepartmentService
 {
 	public IWebHostEnvironment WebHostEnvironment { get; }
 
-	public EMDatabase Database { get; }
+	private readonly HRContext ctx;
 
-	public DepartmentService(IWebHostEnvironment webHostEnvironment, EMDatabase database)
+	public DepartmentService(IWebHostEnvironment webHostEnvironment, HRContext context)
 	{
 		WebHostEnvironment = webHostEnvironment;
-		Database = database;
+		ctx = context;
 	}
 
 	public IEnumerable<Department> GetAllDepartments()
 	{
-		return Database.Departments;
+		return ctx.Departments;
 	}
 
 	public Department GetDepartment(int id)
 	{
-		return Database.Departments
+		return ctx.Departments
 			.Include(d => d.Location)
 			.First(d => d.ID == id);
 	}
