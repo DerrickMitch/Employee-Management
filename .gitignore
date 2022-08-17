@@ -2,13 +2,4 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/EmployeeManagement/FileContentIndex
-.vs/EmployeeManagement/DesignTimeBuild/.dtbcache.v2
-.vs/EmployeeManagement/project-colors.json
-.vs/EmployeeManagement/v17/.futdcache.v1
-.vs/EmployeeManagement/v17/.suo
-.vs/slnx.sqlite
-.vs/VSWorkspaceState.json
-.vs/EmployeeManagement/DesignTimeBuild/.dtbcache.v2
-.vs/EmployeeManagement/v17/.suo
-.vs/slnx.sqlite
+.vs/
